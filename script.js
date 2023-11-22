@@ -18,8 +18,11 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	const readBook=library.filter(book => book.readingStatus===true);
+return readBook.length;
 };
 
 // Do not change the code below
+
 
 alert(numberOfBooksRead());
